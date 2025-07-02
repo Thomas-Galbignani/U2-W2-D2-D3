@@ -1,0 +1,26 @@
+@mixin floating(
+  $radius: 20px,
+  $shadow: 10px 15px 15px 7px #000000,
+  $border: 1px solid $text-panna
+) {
+  border-radius: $radius;
+  box-shadow: $shadow;
+  border: $border;
+}
+
+//cercato su internet il calcolo da fare per avere
+@mixin grid($columns) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+
+  > * {
+    //selettore che si applica a tutti i figli direttti
+    //calcolo che calcola la larghezza di ogni singolo elemento
+    // calc() in css permette di afre calcoli matematici
+    flex: 0 1
+      calc((100% / #{$columns}) - (20px * (#{$columns} - 1) / #{$columns}));
+    box-sizing: border-box;
+  }
+}

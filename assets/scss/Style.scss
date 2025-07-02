@@ -1,0 +1,68 @@
+@import "./partials/reset";
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/spaces";
+@import "./partials/mixins";
+@import "./partials/btns";
+*body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.d-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.flex-row {
+  flex-direction: row;
+}
+.t-center {
+  text-align: center;
+}
+
+nav {
+  height: 80px;
+  background-color: #565656;
+}
+nav img {
+  height: 100%;
+}
+.links {
+  text-decoration: none;
+  color: $text-panna;
+}
+
+//
+.hero {
+  display: flex;
+  background-color: $bg_hero;
+  color: $text-panna;
+}
+
+.magneto {
+  width: 900px;
+}
+.magneto img {
+  width: 100%;
+}
+
+.img-border {
+  @include floating;
+}
+.btn {
+  border-radius: 30px;
+}
+
+p {
+  line-height: 1.6;
+}

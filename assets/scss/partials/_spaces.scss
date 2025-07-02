@@ -1,0 +1,51 @@
+$spacing-sizes: (
+  sm: 0.5em,
+  normal: 1em,
+  md: 1.5em,
+  lg: 2em,
+  xl: 3em,
+  xxl: 4em,
+);
+
+@each $size-name, $size-value in $spacing-sizes {
+  .p-#{$size-name} {
+    padding: $size-value;
+  }
+
+  .pb-#{$size-name} {
+    padding-block: $size-value;
+  }
+
+  .pi-#{$size-name} {
+    padding-inline: $size-value;
+  }
+
+  .m-#{$size-name} {
+    margin: $size-value;
+  }
+
+  .mb-#{$size-name} {
+    margin-block: $size-value;
+  }
+
+  .mi-#{$size-name} {
+    margin-inline: $size-value;
+  }
+}
+
+// mi creo anche delle misure generiche in tanto che ci sono
+@each $size-name, $size-value in $spacing-sizes {
+  .width-#{$size-name} {
+    width: $size-value;
+  }
+}
+@each $size-name, $size-value in $spacing-sizes {
+  .heigth-#{$size-name} {
+    height: $size-value;
+  }
+}
+@each $size-name, $size-value in $spacing-sizes {
+  .f-size-#{$size-name} {
+    font-size: $size-value;
+  }
+}

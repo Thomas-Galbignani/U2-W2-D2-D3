@@ -1,0 +1,13 @@
+$text-panna: #f4f4f4;
+$bg_hero: #640fc5;
+$btns-colors: (
+  primary: #0e6cff,
+  secondary: #ff8700,
+  success: #4caf50,
+);
+
+@each $name, $color in $btns-colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}

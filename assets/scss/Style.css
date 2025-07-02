@@ -1,0 +1,445 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.text-primary {
+  color: #0e6cff;
+}
+
+.text-secondary {
+  color: #ff8700;
+}
+
+.text-success {
+  color: #4caf50;
+}
+
+.p-sm {
+  padding: 0.5em;
+}
+
+.pb-sm {
+  padding-block: 0.5em;
+}
+
+.pi-sm {
+  padding-inline: 0.5em;
+}
+
+.m-sm {
+  margin: 0.5em;
+}
+
+.mb-sm {
+  margin-block: 0.5em;
+}
+
+.mi-sm {
+  margin-inline: 0.5em;
+}
+
+.p-normal {
+  padding: 1em;
+}
+
+.pb-normal {
+  padding-block: 1em;
+}
+
+.pi-normal {
+  padding-inline: 1em;
+}
+
+.m-normal {
+  margin: 1em;
+}
+
+.mb-normal {
+  margin-block: 1em;
+}
+
+.mi-normal {
+  margin-inline: 1em;
+}
+
+.p-md {
+  padding: 1.5em;
+}
+
+.pb-md {
+  padding-block: 1.5em;
+}
+
+.pi-md {
+  padding-inline: 1.5em;
+}
+
+.m-md {
+  margin: 1.5em;
+}
+
+.mb-md {
+  margin-block: 1.5em;
+}
+
+.mi-md {
+  margin-inline: 1.5em;
+}
+
+.p-lg {
+  padding: 2em;
+}
+
+.pb-lg {
+  padding-block: 2em;
+}
+
+.pi-lg {
+  padding-inline: 2em;
+}
+
+.m-lg {
+  margin: 2em;
+}
+
+.mb-lg {
+  margin-block: 2em;
+}
+
+.mi-lg {
+  margin-inline: 2em;
+}
+
+.p-xl {
+  padding: 3em;
+}
+
+.pb-xl {
+  padding-block: 3em;
+}
+
+.pi-xl {
+  padding-inline: 3em;
+}
+
+.m-xl {
+  margin: 3em;
+}
+
+.mb-xl {
+  margin-block: 3em;
+}
+
+.mi-xl {
+  margin-inline: 3em;
+}
+
+.p-xxl {
+  padding: 4em;
+}
+
+.pb-xxl {
+  padding-block: 4em;
+}
+
+.pi-xxl {
+  padding-inline: 4em;
+}
+
+.m-xxl {
+  margin: 4em;
+}
+
+.mb-xxl {
+  margin-block: 4em;
+}
+
+.mi-xxl {
+  margin-inline: 4em;
+}
+
+.width-sm {
+  width: 0.5em;
+}
+
+.width-normal {
+  width: 1em;
+}
+
+.width-md {
+  width: 1.5em;
+}
+
+.width-lg {
+  width: 2em;
+}
+
+.width-xl {
+  width: 3em;
+}
+
+.width-xxl {
+  width: 4em;
+}
+
+.heigth-sm {
+  height: 0.5em;
+}
+
+.heigth-normal {
+  height: 1em;
+}
+
+.heigth-md {
+  height: 1.5em;
+}
+
+.heigth-lg {
+  height: 2em;
+}
+
+.heigth-xl {
+  height: 3em;
+}
+
+.heigth-xxl {
+  height: 4em;
+}
+
+.f-size-sm {
+  font-size: 0.5em;
+}
+
+.f-size-normal {
+  font-size: 1em;
+}
+
+.f-size-md {
+  font-size: 1.5em;
+}
+
+.f-size-lg {
+  font-size: 2em;
+}
+
+.f-size-xl {
+  font-size: 3em;
+}
+
+.f-size-xxl {
+  font-size: 4em;
+}
+
+.btn-primary {
+  background-color: #0e6cff;
+}
+
+.btn-secondary {
+  background-color: #ff8700;
+}
+
+.btn-success {
+  background-color: #4caf50;
+}
+
+* body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.t-center {
+  text-align: center;
+}
+
+nav {
+  height: 80px;
+  background-color: #565656;
+}
+
+nav img {
+  height: 100%;
+}
+
+.links {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.hero {
+  display: flex;
+  background-color: #640fc5;
+  color: #f4f4f4;
+}
+
+.magneto {
+  width: 900px;
+}
+
+.magneto img {
+  width: 100%;
+}
+
+.img-border {
+  border-radius: 20px;
+  box-shadow: 10px 15px 15px 7px #000000;
+  border: 1px solid #f4f4f4;
+}
+
+.btn {
+  border-radius: 30px;
+}
+
+p {
+  line-height: 1.6;
+}/*# sourceMappingURL=Style.css.map */
