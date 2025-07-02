@@ -442,4 +442,20 @@ nav img {
 
 p {
   line-height: 1.6;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.grid > * {
+  flex: 0 1 calc(100% / 2 - 20px * (2 - 1) / 2);
+  box-sizing: border-box;
+  width: calc(100% / 2 - 20px * (2 - 1) / 2);
+}
+
+.height-img {
+  height: 500px;
 }/*# sourceMappingURL=Style.css.map */

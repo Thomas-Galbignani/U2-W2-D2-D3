@@ -22,5 +22,8 @@
     flex: 0 1
       calc((100% / #{$columns}) - (20px * (#{$columns} - 1) / #{$columns}));
     box-sizing: border-box;
+    width: calc(
+      (100% / #{$columns}) - (20px * (#{$columns} - 1) / #{$columns})
+    );
   }
 }
